@@ -1,0 +1,8 @@
+Django
+Pillow
+django-bootstrap4
+django-bootstrap-datepicker-plus
+django-imap-backend
+gunicorn==19.6.0
+Unipath==1.0
+python-decouple==3

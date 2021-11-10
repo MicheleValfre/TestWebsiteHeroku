@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta charset="utf-8" />
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+{% load bootstrap4 %}       {# import bootstrap4/bootstrap3 #}
+{% bootstrap_css %}         {# Embed Bootstrap CSS #}
+{% bootstrap_javascript jquery='full' %}  {# Embed Bootstrap JS+jQuery #}
+{{ form.media }}            {# Adds date-picker required JS and CSS #}
+</head>
+<body>
+</div>
+<div class="event-form">
+    <h1>Event Form</h1>
+    <form action="" enctype="multipart/form-data" method="POST">
+        <table>
+            {% csrf_token %}
+            {{form.as_table}}
+        </table>
+            <input class="submit-input" type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta charset="utf-8" />
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+<body>
+<div class="logodiv">
+    <img src="{% static 'website/icons/logo.png' %}" 
+        height=200;
+        width=150;
+        alt="logo-png" 
+        >
+</div>
+<div class="topbar">
+    {% if not logged %}
+        <a href="/signin">
+            <button class="signin-button">
+                <img src="{% static 'website/icons/login.png' %}" 
+                alt="login-png" 
+                width="20" 
+                height="20">
+                Sign In
+            </button>
+        </a> 
+    {% else %}
+        <div class="personal-submenu-div">
+            <a href="/personal" class="personal">
+                <button>
+                    {{ name }}
+                </button>
+            </a>
+            <div class="submenu">
+            {% if isAdmin == True %}
+                    <a href="/superuser/edit_info">
+                        <button>
+                            Edit Info
+                        </button>
+                    </a>
+                    <a href="/superuser/news">
+                        <button>
+                            Edit News
+                        </button>
+                    </a>
+                    <a href="/superuser/contacts">
+                        <button>
+                            Edit Contacts
+                        </button>
+                    </a>
+                    <a href="/superuser/downloads">
+                        <button>
+                            Edit Downloads 
+                        </button>
+                    </a>
+                    <a href="/superuser/players">
+                        <button>
+                            Edit Players
+                        </button>
+                    </a>
+                    <a href="/superuser/events">
+                        <button>
+                            Edit Events
+                        </button>
+                    </a>
+                    <a href="/superuser/emails">
+                        <button>
+                            Emails
+                        </button>
+                    </a>
+                    <a href="/superuser/pitches">
+                        <button>
+                            Edit Pitches
+                        </button>
+                    </a>
+                    <a href="/superuser/honours">
+                        <button>
+                            Edit Honours
+                        </button>
+                    </a>
+                    <a href="/superuser/sponsors">
+                        <button>
+                            Edit Sponsors
+                        </button>
+        {% endif %}
+        <button class="personal-button">
+            <a href="/faq">Help</a><br>
+        </button>
+        </div>
+    </div>
+        <a href="/logout">
+            <button class="signin-button">
+                <img src="{% static 'website/icons/login.png' %}" 
+                alt="logout-png" 
+                width="20" 
+                height="20">
+                Log Out
+            </button>
+        </a>
+    {% endif %}
+    <div class="mainsponsors">
+        {% for s in sponsors %} <a href={{s.url}}> <img src={{s.banner.url}} {% endfor %}
+        <!--TODO use template to set main sponsors-->
+    </div>
+</div>
+<div class="navbar">
+    <div class="submenu-div">
+        <a href="/events">
+            <button class="navbar-button">
+                Events
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/events/tournaments">
+                <button class="submenu-button">Tournaments</button>
+            </a>
+            <a href="/events/fundraising">
+                <button class="submenu-button">Fundraising Events</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu-div">
+        <a href="/sponsors">
+            <button class="navbar-button">
+                Sponsors
+            </button>
+        </a>
+    </div>
+    <div class="submenu-div">
+        <a href=teams>
+            <button class="navbar-button">
+                Teams
+            </button>
+        </a>
+    </div>
+    <div class="submenu-div">
+        <a href="/about">
+            <button class="navbar-button">
+                About
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/about/contacts">
+                <button class="submenu-button">Club Contacts</button>
+            </a>
+            <a href="/about/ethos">
+                <button class="submenu-button">Club Ethos</button>
+            </a>
+            <a href="/about/news">
+                <button class="submenu-button">News</button><br>
+            </a>
+            <a href="/about/links">
+                <button class="submenu-button">Links</button>
+            </a>
+            <a href="/about/3g-astro">
+                <button class="submenu-button">3G Astro</button>
+            </a>
+            <a href="/about/directions">
+                <button class="submenu-button">Directions</button>
+            </a>
+            <a href="/about/calendar">
+                <button class="submenu-button">Club Calendar</button>
+            </a>
+            <a href="/about/joinus">
+                <button class="submenu-button">Join WJFC</button>
+            </a>
+        </div>
+    </div>
+    <a href="/">
+        <div class="submenu-div">
+            <button class="navbar-button">
+                Home
+            </button>
+        </div>
+    </a>
+
+</div>
+<div class="sociallinks">
+        <h1>Where to find us</h1>
+        <a href="https://www.facebook.com/WendoverJuniorFootball/">
+            <img src="{% static 'website/icons/facebook-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+        <a href="https://twitter.com/wendoverjuniors?lang=en">
+            <img src="{% static 'website/icons/twitter-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+        <a href="https://www.youtube.com/c/WendoverJuniorFootballClub/videos">
+            <img src="{% static 'website/icons/youtube-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+    </div>
+</div>
+<div class="edit_main_texts">
+    <h1>Edit About</h1>
+    <div class="mainphotodiv">
+    <img src="{{ about.photo.url }}" 
+        alt="No Picture"
+        >
+    </div>
+    <form action="" method="post" enctype="multipart/form-data">
+    <table>
+        {% csrf_token %}
+        {{form.as_table}}
+        <tr>
+            <td>&nbsp;</td>
+            <td><input class="submit-input" type="submit" value="Submit"></td>
+            
+        </tr>
+    </table>
+    </form>
+    <br>
+    <br>
+    <a href="/superuser/edit_info">
+                <button>
+                    Back
+                </button>
+            </a>
+</div>
+</div>
+<div class="bottom">
+    <img class="bottom-logo" src="{% static 'website/icons/logo.png' %}" 
+        height=200;
+        width=150;
+    >
+    <div class="important">
+        <h1>IMPORTANT</h1>
+        <a href="/about/welfare">
+            club welfare
+        </a>
+        <br>
+        <a href="/about/docs">
+            documents & policies
+        </a>
+        <br>
+        <a href="/about/priv">
+            privacy policy
+        </a>
+        <br>
+    </div>
+    <div class="about_bottom">
+        <h1>ABOUT</h1>
+        <p>
+            Wendover Junior Football Club started in 1978 and has over 300 players from Under 6 to Under 14 playing in the South Bucks Mini-Soccer Conference, Wycombe and South Bucks Minor Football League and South Bucks Youth League
+        </p>
+    </div>
+    <div class="links_bottom">
+        <h1>WHERE TO FIND US</h1>
+        <a href="https://www.facebook.com/WendoverJuniorFootball/">FACEBOOK</a><br>
+        <a href="https://twitter.com/wendoverjuniors?lang=en">TWITTER</a><br>
+        <a href="https://www.youtube.com/c/WendoverJuniorFootballClub/videos">YOUTUBE</a><br>
+        <a href="/about/directions">DIRECTIONS</a>
+    </div>
+</div>
+</body>
+</html>

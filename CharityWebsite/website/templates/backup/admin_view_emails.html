@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta charset="utf-8" />
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+<body>
+<div class="logodiv">
+    <img src="{% static 'website/icons/logo.png' %}" 
+        height=200;
+        width=150;
+        alt="logo-png" 
+        >
+</div>
+<div class="topbar">
+    {% if not logged %}
+        <a href="/signin">
+            <button class="signin-button">
+                <img src="{% static 'website/icons/login.png' %}" 
+                alt="login-png" 
+                width="20" 
+                height="20">
+                Sign In
+            </button>
+        </a> 
+    {% else %}
+        <div class="personal-submenu-div">
+            <a href="/personal" class="personal">
+                <button>
+                    {{ name }}
+                </button>
+            </a>
+            <div class="submenu">
+                {% if isAdmin == True %}
+                    <a href="/superuser/welcome">
+                        <button>
+                            Edit Welcome
+                        </button>
+                    </a>
+                    <a href="/superuser/news">
+                        <button>
+                            Edit News
+                        </button>
+                    </a>
+                    <a href="/superuser/contacts">
+                        <button>
+                            Edit Contacts
+                        </button>
+                    </a>
+                    <a href="/superuser/downloads">
+                        <button>
+                            Edit Downloads 
+                        </button>
+                    </a>
+                    <a href="/superuser/players">
+                        <button>
+                            Edit Players
+                        </button>
+                    </a>
+                    <a href="/superuser/events">
+                        <button>
+                            Edit Events
+                        </button>
+                    </a>
+                    <a href="/superuser/emails">
+                        <button>
+                            Emails
+                        </button>
+                    </a>
+                    <a href="/superuser/pitches">
+                        <button>
+                            Edit Pitches
+                        </button>
+                    </a>
+                    <a href="/superuser/honours">
+                        <button>
+                            Edit Honours
+                        </button>
+                    </a>
+                    <a href="/superuser/sponsors">
+                        <button>
+                            Edit Sponsors
+                        </button>
+                    </a>
+                    <a href="/superuser/clubhouse">
+                        <button>
+                            Clubhouse
+                        </button>
+                    </a>
+                    <a href="/superuser/webmaster_news">
+                        <button>
+                            Webmaster News
+                        </button>
+                    </a>
+                {% endif %}
+                    <button class="personal-button">
+                        <a href="/faq">Help</a><br>
+                    </button>
+        </div>
+    </div>
+        <a href="/logout">
+            <button class="signin-button">
+                <img src="{% static 'website/icons/login.png' %}" 
+                alt="logout-png" 
+                width="20" 
+                height="20">
+                Log Out
+            </button>
+        </a>
+    {% endif %}
+    <div class="mainsponsors">
+        {% for s in sponsors %} <a href={{s.url}}> <img src={{s.banner.url}} {% endfor %}
+        <!--TODO use template to set main sponsors-->
+    </div>
+</div>
+<div class="navbar">
+    <div class="submenu-div">
+        <a href="/events">
+            <button class="navbar-button">
+                Events
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/events/tournaments">
+                <button class="submenu-button">Tournaments</button>
+            </a>
+            <a href="/events/fundraising">
+                <button class="submenu-button">Fundraising Events</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu-div">
+        <a href="/sponsors">
+            <button class="navbar-button">
+                Sponsors
+            </button>
+        </a>
+    </div>
+    <div class="submenu-div">
+        <a href="/welfare">
+            <button class="navbar-button">
+                Welfare
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/welfare/intro">
+                <button class="submenu-button">Introduction</button>
+            </a>
+            <a href="/welfare/policies">
+                <button class="submenu-button">Policies</button>
+            </a>
+        </div>
+    </div>
+    <div class="submenu-div">
+        <a href=teams>
+            <button class="navbar-button">
+                Teams
+            </button>
+        </a>
+    </div>
+    <div class="submenu-div">
+        <a href="/about">
+            <button class="navbar-button">
+                About
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/about/contacts">
+                <button class="submenu-button">Club Contacts</button>
+            </a>
+            <a href="/about/ethos">
+                <button class="submenu-button">Club Ethos</button>
+            </a>
+            <a href="/about/news">
+                <button class="submenu-button">News</button><br>
+            </a>
+            <a href="/about/links">
+                <button class="submenu-button">Links</button>
+            </a>
+            <a href="/about/3g-astro">
+                <button class="submenu-button">3G Astro</button>
+            </a>
+            <a href="/about/directions">
+                <button class="submenu-button">Directions</button>
+            </a>
+            <a href="/about/calendar">
+                <button class="submenu-button">Club Calendar</button>
+            </a>
+            <a href="/about/joinus">
+                <button class="submenu-button">Join WJFC</button>
+            </a>
+        </div>
+    </div>
+    <a href="/">
+        <div class="submenu-div">
+            <button class="navbar-button">
+                Home
+            </button>
+        </div>
+    </a>
+
+</div>
+<div class="sociallinks">
+        <h1>Where to find us</h1>
+        <a href="https://www.facebook.com/WendoverJuniorFootball/">
+            <img src="{% static 'website/icons/facebook-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+        <a href="https://twitter.com/wendoverjuniors?lang=en">
+            <img src="{% static 'website/icons/twitter-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+        <a href="https://www.youtube.com/c/WendoverJuniorFootballClub/videos">
+            <img src="{% static 'website/icons/youtube-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+    </div>
+<div class="mail-list">
+    <h1>Mailing lists</h1>
+    <table>
+        <tr>
+            <th>Team</th>
+            <th>Child's Name</th>
+            <th>Mail</th>
+            <th></th>
+        </tr>
+        {% for m in mlist %}
+            <tr>
+                <td>{{ m.list.name}}</td>
+                <td>{{ m.address }}</td>
+                <td>{{ m.child }}</td>
+                <td>
+                    <a href={% url 'admin_send_mail' m.id %}>
+                        <button class="admin-button">
+                            Send
+                        </button>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    <table>
+</div>
+<div class="bottom">
+    <img class="bottom-logo" src="{% static 'website/icons/logo.png' %}" 
+        height=200;
+        width=150;
+    >
+    <div class="important">
+        <h1>IMPORTANT</h1>
+        <a href="/about/welfare">
+            club welfare
+        </a>
+        <br>
+        <a href="/about/welfare">
+            documents & policies
+        </a>
+        <br>
+        <a href="/about/welfare">
+            privacy policy
+        </a>
+        <br>
+    </div>
+    <div class="about_bottom">
+        <h1>ABOUT</h1>
+        <p>
+            PLACEHOLDER
+        </p>
+    </div>
+    <div class="links_bottom">
+        <h1>WHERE TO FIND US</h1>
+        <a href="https://www.facebook.com/WendoverJuniorFootball/">FACEBOOK</a><br>
+        <a href="https://twitter.com/wendoverjuniors?lang=en">TWITTER</a><br>
+        <a href="https://www.youtube.com/c/WendoverJuniorFootballClub/videos">YOUTUBE</a><br>
+        <a href="/about/directions">DIRECTIONS</a>
+    </div>
+</div>
+</body>
+</html>

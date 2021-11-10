@@ -1,0 +1,1407 @@
+body{
+    background-color: white;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+form{
+  display: inline-block;
+}
+
+.topbar{
+    margin-left:-10px;
+    margin-right:-8px;
+    margin-top: -8px;
+    height: 60px;
+    padding-left: 140px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #231f1f;
+    color: white;
+    box-shadow: 4px 3px 8px 1px #28292a;
+}
+
+.signin-button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.signin-button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.mainsponsors{
+  float: right;
+  padding: 5px;
+  border: 2px solid red;
+}
+
+.mainsponsors img{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.mainsponsors a{
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.logodiv{
+  position: absolute;
+  z-index:2;
+}
+
+.navbar{
+    background-color: #f80d0d;
+    padding-top: 20px;
+    position: absolute;
+    width:100%;
+    margin-left: -8px;
+}
+
+.submenu-div{
+    float:right;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.personal-submenu-div{
+    float:left;
+}
+
+.personal-submenu-div .submenu{
+    width: 50%;
+}
+
+.personal-submenu-div .submenu button{
+    background-color: grey;
+    text-transform: uppercase;
+}
+
+.personal-submenu-div .submenu button:hover{
+    background-color: #ee4b3f;
+    text-transform: uppercase;
+}
+
+/* Show the dropdown menu on hover */
+.personal-submenu-div:hover .submenu{display: block;}
+.personal-submenu-div:hover .personal button{background-color: grey;}
+
+.navbar-button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: arial;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.navbar-button:hover{
+  background-color: #b70b0b;
+}
+
+.intro {
+  margin-left:-10px;
+  margin-right:-8px;
+  margin-top: -7px;
+  background-color: white;
+  min-height: 300px;
+  padding: 20px;
+}
+
+
+
+.intro p{
+  text-align: justify;
+  font-family: Times, serif;
+  font-size: 20px;
+  padding: 100px;
+}
+
+.bottom{
+  background-color: #f80d0d;
+  height: 100%;
+  width: 100%;
+}
+
+.bottom h1{
+  color: white;
+  font-size: 20px;
+}
+
+.bottom a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.bottom div{
+  display: inline-block;
+  min-height: 200px;
+  padding-left: 15%;
+}
+
+.bottom .important{
+  float: left;
+}
+
+.bottom .links_bottom{
+}
+
+.bottom .about_bottom{
+  float: left;
+  word-wrap: break-word;
+  width: 10%;
+}
+
+.bottom .about_bottom p{
+  font-size: 11px;
+  font-family: arial;
+}
+
+.bottom-logo{
+  float:right;
+}
+
+.mainphotodiv{
+  margin-left:-10px;
+  margin-right:-8px;
+}
+
+.submenu{
+    margin-top: -10px;
+    margin-left: 2px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
+    z-index:2;
+}
+
+.submenu button{
+    background-color: #b70b0b;
+    border: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    width:100%;
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+.submenu button:hover{
+    background-color:#231f1f;
+}
+
+/* Show the dropdown menu on hover */
+.submenu-div:hover .submenu{display: block;}
+
+.submenu-div:hover .navbar-button{
+  background-color: #b70b0b;
+}
+
+.sociallinks{
+  margin: 5px;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.sociallinks h1{
+  font-size: 30px;
+}
+
+
+.sociallinks a{
+    color: #231f1f;
+    text-decoration: none;
+}
+
+.sociallinks img{
+    padding-left: 20px;
+}
+
+.paragraph-div{
+  background-color: white;
+  padding:100px;
+  margin-left:-10px;
+  margin-right:-8px;
+  min-height: 200px;
+}
+
+.paragraph-div img {
+    width: 100%;
+    height: auto;
+}
+
+
+.contact-list{
+  background-color: white;
+  padding: 100px;
+}
+
+.contact-elem{
+    border-bottom: 2px solid;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1{
+  color: black;
+  font-family: arial;
+  font-size: 50px;
+}
+
+.contact-list a{
+  text-decoration: none;
+}
+
+.news-div{
+  padding:100px;
+  background-color: white;
+  margin-left:-10px;
+  margin-right:-8px;
+  display: block;
+
+}
+
+.news{
+  background-color: white;
+  padding: 20px;
+  border-top: 1px solid #f80d0d; 
+  margin-top: 20px;
+}
+
+.news-header h2{
+  font-family: serif;
+  color:black; 
+  font-size: 50px;
+  float: left;
+}
+
+.news-header h3{
+  color:black;
+  font-family: Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+}
+
+.news p{
+  padding: 40px;
+  font-family: Sans-serif;
+  font-size: 20px;
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.joinus-form{
+    padding:100px;
+    background-color: white;
+    margin-left:-10px;
+    margin-right:-8px;
+    text-align: center;
+}
+
+
+
+.joinus-form h2{
+    color: black;
+
+}
+
+.signin-form{
+    padding:100px;
+    background-color: white;
+    display: block;
+    min-height: 300px;
+}
+
+.signin-form h2{
+    color: black;
+    font-size: 20px;
+}
+
+.signin-form input{
+    background-color: #f80d0d;
+}
+
+.signin-form .signin-button:hover{
+    background-color: #231f1f;
+    color: white;
+    border: 2px solid #f80d0d; 
+}
+
+.personal{
+    color: red;
+    text-decoration: none;
+    font-family: Times, serif;
+}
+
+
+
+.personal-submenu-div{
+    background: #231f1f;
+    text-align: center;
+}
+
+.personal-submenu-div a{
+    color: red;
+    background- black;
+    width:100%;
+}
+
+.controls h3{
+    color: #f80d0d;
+}
+
+.edit_msg-form{
+  margin: auto;
+  padding-top: 100px;
+  min-height: 630px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+
+
+.edit_msg-form textarea{
+  resize: none;
+}
+
+.edit_msg-form h1{
+    color: Black;
+}
+
+.edit_msg-form input{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.edit_msg-form input:hover {
+  background-color: #f80d0d; 
+  color: white;
+  border: 2px solid white;
+}
+
+.edit_msg-form button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.edit_msg-form button:hover {
+  background-color: #f80d0d; 
+  color: white;
+  border: 2px solid white;
+}
+
+.welcome_message{
+    background-color: white;
+    min-height: 700px;
+}
+
+.welcome_message h1{
+    padding-top: 100px;
+    color: black;
+    text-align: center;
+}
+
+.welcome_message p{
+    text-align: justify;
+    font-family: Times, serif;
+    font-size: 20px;
+    padding-left: 300px;
+    padding-right: 100px;
+    color: black;
+}
+
+.personal-button a{
+    color: white;
+    text-decoration: none;
+}
+
+.news-div button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:90px;
+  border: 2px solid #f80d0d;
+  text-transform: uppercase;
+}
+
+.news-div button:hover{
+  color: white;
+  background-color:#231f1f;
+  border: 2px solid #f80d0d;
+}
+
+.personal button{
+  background-color: #231f1f;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.personal button:hover{
+  color: white;
+}
+
+.contacts{
+  background-color: white;
+  min-height: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.edit-contact-form{
+  padding-top: 100px;
+  background-color: white;
+  text-align: center;
+}
+
+
+.contact-entry{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.contact-entry a{
+  text-decoration: none;
+}
+
+.contact-entry h1{
+  font-family: Times, serif;
+  font-size: 15px;
+  color:black;
+}
+
+.contacts button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contacts button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+.contacts a {
+  padding-left: 20px;
+}
+
+.contact-entry a{
+  padding-left: 0px;
+}
+
+.mail-list{
+  padding-top: 100px;
+  background-color: white;
+}
+
+.mail-addr{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.mail-addr h1{
+  font-family: Times, serif;
+  font-size: 15px;
+  color:black;
+}
+
+.add-mail{
+  padding-top: 100px;
+  background-color: white;
+}
+
+.mail-list button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mail-list button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+.mail-list a {
+  padding-left: 20px;
+}
+
+.mail-addr a{
+  padding-left: 0px;
+}
+
+.team-downloads{
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.team-downloads button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.team-downloads button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+
+.add-download-form{
+  background-color: white;
+  text-align: center;
+}
+
+.training-div{
+  background-color: white;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+
+.training-div button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.training-div button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+.training-form{
+  background-color: white;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.honours-div{
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+}
+
+.honours-div button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.honours-div button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+.honours-form{
+  background-color: white;
+  padding-top: 100px;
+}
+
+.players-div{
+  background-color:white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.players-div button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.players-div button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+.players-form{
+  background-color: #f80d0d;
+  color: black;
+  text-align: center;
+}
+
+.players-form h2{
+  font-family: serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.submit-input{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: solid 2px black;
+}
+
+.submit-input:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+
+.add-fixture{
+  background-color: #f80d0d;
+  padding-top: 100px;
+  color: black;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.add-fixture h2{
+  font-family: serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.add-fixture h1{
+  color: black;
+  font-size: 60px;
+  text-align: center;
+}
+
+.players-form h1{
+  color: black;
+  font-size: 60px;
+  text-align: center;
+}
+
+.players-div table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.players-div td{
+  text-align: center;
+}
+
+.players-div tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.players-div td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+.admin-main{
+  background-color: white;
+  min-height: 700px;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-right: 100px;
+}
+
+.admin-main h2{
+  float: left;
+}
+
+.admin-button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #f80d0d;
+  text-transform: uppercase;
+}
+
+.admin-button:hover{
+  color: white;
+  background-color:#231f1f;
+  border: 2px solid #f80d0d;
+}
+
+.search-input{
+  background-color: #231f1f;
+  color: white;
+}
+
+.events-div{
+  background-color:white;
+  min-height: 700px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.events-div h1{
+  color: black;
+}
+
+.event-form{
+  background-color: #f80d0d;
+  padding-top: 100px;
+  padding-bottom: 266px;
+  padding-left: 100px;
+  text-align: center;
+}
+
+.event-form h1{
+  color: black;
+}
+
+.main-hr{
+    border: none;
+    border-top-color: red;
+    border-top-style: dotted;
+    border-top-width: 30px;
+}
+
+.mail-list td{
+  text-align: center;
+}
+
+.mail-list tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.mail-list td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+.honours-form {
+  padding: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.sponsors-div{
+  padding: 100px;
+  background-color: white;
+}
+
+.sponsors-div a{
+  text-decoration: none;
+  color: black;
+}
+
+.sponsors-div button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #f80d0d;
+  text-transform: uppercase;
+}
+
+.sponsors-div button:hover{
+  color: white;
+  background-color:#231f1f;
+  border: 2px solid #f80d0d;
+}
+
+.sponsor-form {
+  padding: 100px;
+  padding-bottom: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.sponsor-banner{
+  display: inline-block;
+  border: solid 2px;
+}
+
+.webmaster-div{
+  padding: 100px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.sep-div-map-top{
+  padding-top: 100px;
+}
+
+.sep-div-map-bottom{
+  padding-top: 700px;
+}
+
+.map-div{
+  width: 800px;
+  height: 600px;
+  background-color: white;
+  float:left;
+}
+
+.directions-div{
+  float: right;
+  background-color: white;
+  min-height: 600px;
+  min-width: 400px;
+  padding-right: 100px;
+}
+
+.directions-div p{
+  text-align: left;
+  padding: 30px;
+}
+
+.directions-div h1{
+  text-align: left;
+}
+
+.teams-div{
+  padding:100px;
+  background-color: white;
+  margin-left:-10px;
+  margin-right:-8px; 
+}
+
+.teams-div a{
+  text-decoration: none;
+}
+
+.spnsrs-div{
+  min-height : 100px;
+  padding:100px;
+  background-color: white;
+  margin-left:-10px;
+  margin-right:-8px; 
+}
+
+.spnsrs-div a{
+  text-decoration: none;
+}
+
+.calendar-div{
+  padding:100px;
+  background-color: white;
+  text-align: center;
+}
+
+.calendar-div .calendar{
+  width: 98%;
+  margin: auto;
+  font-size: 13px;
+}
+
+.calendar-div .calendar tr, .calendar td {
+  border: 1px solid black;
+}
+
+.calendar-div .calendar th {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calendar-div.calendar td {
+  width: 200px;
+  height: 150px;
+  padding: 20px 0px 0px 5px;
+}
+
+.calendar-div .month {
+  font-size: 25px;
+}
+
+.calendar-div .date {
+  font-size: 16px;
+}
+
+.calendar-div ul {
+  height: 100%;
+  padding: 0px 5px 0px 20px;
+}
+
+.calendar-div a {
+  color: black;
+  text-decoration: none;
+}
+
+.calendar .ok{
+  float: left;
+  padding-right: 200px;
+}
+
+
+
+.calendar-div button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.calendar-div button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+.mail-list .send-mail-button{
+  padding-left: 90%;
+}
+
+.send_mail_form{
+  background-color: white;
+  padding:100px;
+  margin-left:-10px;
+  margin-right:-8px;
+  min-height: 200px;
+}
+
+.fundraising{
+  background-color: white;
+  padding: 100px;
+}
+
+.download-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.download-table tr{
+  border-bottom: 1px solid;
+}
+
+.training-div table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.training-div tr{
+  border-bottom: 1px solid;
+}
+
+.other-mails{
+  min-height: 100px;
+}
+
+.downloads{
+  padding-bottom: 100px;
+}
+
+.pitches{
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.pitch{
+}
+
+.pitches button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.pitches button:hover {
+  background-color: #f80d0d; 
+  color: white;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.grid table{
+  padding-left: 33%;
+}
+
+.pitch-edit-div{
+  text-align: center;
+}
+
+.pitch-edit-div button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.pitch-edit-div button:hover{
+  color: white;
+  background-color:#231f1f;
+}
+
+.pitch-edit-div a{
+  text-decoration: none;
+}
+
+.pitch-edit-div h3{
+  padding-right: 50%;
+}
+
+.image_display img{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.img-form-div a{
+  text-decoration: none;
+}
+
+.img-form-div button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:90px;
+  border: 2px solid #f80d0d;
+  text-transform: uppercase;
+}
+
+.img-form-div button:hover{
+  color: white;
+  background-color:#231f1f;
+  border: 2px solid #f80d0d;
+}
+
+.news-div a{
+  text-decoration: none;
+}
+
+.news-div img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.img-view{
+  display: none;
+  z-index: 3;
+}
+
+.img-view img{
+  max-width: none;
+  max-height: none;
+}
+
+.x-button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:90px;
+  border: 2px solid #f80d0d;
+  text-transform: uppercase;
+}
+
+.x-button:hover{
+  color: white;
+  background-color:#231f1f;
+  border: 2px solid #f80d0d;
+}
+
+.date-pick{
+  text-align: center;
+  padding-top: 20%;
+}
+
+.set-time{
+  text-align: center;
+  padding-top: 20%;
+}
+
+.events-div a{
+    text-decoration: none;
+}
+
+.events-div button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.events-div button:hover {
+  background-color: #f80d0d; 
+  color: white;
+  border: 2px solid white;
+}
+
+.edit_info{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.edit_info a{
+  text-decoration: none;
+}
+
+.edit_info button{
+    background-color: #b70b0b;
+    border: none;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    width:100%;
+    height: 50%;
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+.edit_info button:hover{
+    background-color:#231f1f;
+}
+
+.edit_main_texts{
+   text-align: center;
+   padding-bottom: 10%;
+   padding-top: 10%;
+
+}
+
+.edit_main_texts button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.edit_main_texts button:hover {
+  background-color: #f80d0d; 
+  color: white;
+  border: 2px solid white;
+}
+
+.paragraph-div button{
+  background-color: #231f1f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.paragraph-div button:hover {
+  background-color: #f80d0d; 
+  color: white;
+  border: 2px solid white;
+}
+
+.pitch-form{
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+
+.pitch-booking-div{
+  text-align: center;
+}
+
+.pitch-booking-div button{
+  background-color: #f80d0d;
+  border:none; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #f80d0d;
+  text-transform: uppercase;
+}
+
+.pitch-booking-div button:hover{
+  color: white;
+  background-color:#231f1f;
+  border: 2px solid #f80d0d;
+}
+
+.pitch-booking-div a{
+  text-decoration: none;
+}
+
+.pitch-booking-div h3{
+  padding-right: 50%;
+}

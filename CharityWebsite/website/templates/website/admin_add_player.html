@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta charset="utf-8" />
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+{% load bootstrap4 %}       {# import bootstrap4/bootstrap3 #}
+{% bootstrap_css %}         {# Embed Bootstrap CSS #}
+{% bootstrap_javascript jquery='full' %}  {# Embed Bootstrap JS+jQuery #}
+{{ form.media }}            {# Adds date-picker required JS and CSS #}
+</head>
+<body>
+</div>
+<div class="players-form">
+    <h1>New Player Form</h1>
+    <form action="" enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <hr>
+            <h2>League</h2>
+            {{l_form.as_p}}
+            <hr>
+            <h2>Cup</h2>
+            {{c_form.as_p}}
+            <hr>
+            <h2>Friendly</h2>
+            {{f_form.as_p}}
+            <input class="submit-input" type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

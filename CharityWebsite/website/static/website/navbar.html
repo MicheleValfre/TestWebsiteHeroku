@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% load static %}
+<meta charset="utf-8" />
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+<template>
+<div class="navbar">
+    <div class="submenu-div">
+        <button class="navbar-button">
+            Events
+        </button>
+        <div class="submenu">
+            <button class="submenu-button">Tournaments</button>
+            <button class="submenu-button">Fundraising Events</button>
+        </div>
+    </div>
+
+    <div class="submenu-div">
+        <button class="navbar-button">
+            Sponsors
+        </button>
+    </div>
+    <div class="submenu-div">
+        <button class="navbar-button">
+            Welfare
+        </button>
+        <div class="submenu">
+            <button class="submenu-button">Introduction</button>
+            <button class="submenu-button">Policies</button>
+        </div>
+    </div>
+    <div class="submenu-div">
+        <button class="navbar-button">
+            Teams
+        </button>
+        <div class="submenu">
+            <button class="submenu-button">General Info</button>
+            <button class="submenu-button">Coach Contacts</button>
+            <button class="submenu-button">Age Group Sponsor</button>
+        </div>
+    </div>
+    <div class="submenu-div">
+        <a href="about">
+            <button class="navbar-button">
+                About
+            </button>
+        </a>
+        <div class="submenu">
+            <button class="submenu-button">Club Contacts</button>
+            <button class="submenu-button">Club Ethos</button>
+            <button class="submenu-button">News</button><br>
+            <button class="submenu-button">Links</button>
+            <button class="submenu-button">3G Astro</button>
+            <button class="submenu-button">Directions</button>
+            <button class="submenu-button">Club Calendar</button>
+            <button class="submenu-button">Join WJFC</button>
+        </div>
+    </div>  
+    <a href="/">
+        <div class="submenu-div">
+            <button class="navbar-button">
+                Home
+            </button>
+        </div>
+    </a>
+
+</div>
+</template>
+</html>

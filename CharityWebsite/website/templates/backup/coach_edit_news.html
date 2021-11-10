@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta charset="utf-8" />
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+<body>
+<div class="logodiv">
+    <img src="{% static 'website/icons/logo.png' %}" 
+        height=200;
+        width=150;
+        alt="logo-png" 
+        >
+</div>
+<div class="navbar">
+    <div class="submenu-div">
+        <a href="/events">
+            <button class="navbar-button">
+                Events
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/events/tournaments">
+                <button class="submenu-button">Tournaments</button>
+            </a>
+            <a href="/events/fundraising">
+                <button class="submenu-button">Fundraising Events</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="submenu-div">
+        <a href="/sponsors">
+            <button class="navbar-button">
+                Sponsors
+            </button>
+        </a>
+    </div>
+    <div class="submenu-div">
+        <a href="/welfare">
+            <button class="navbar-button">
+                Welfare
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/welfare/intro">
+                <button class="submenu-button">Introduction</button>
+            </a>
+            <a href="/welfare/policies">
+                <button class="submenu-button">Policies</button>
+            </a>
+        </div>
+    </div>
+    <div class="submenu-div">
+        <a href=teams>
+            <button class="navbar-button">
+                Teams
+            </button>
+        </a>
+    </div>
+    <div class="submenu-div">
+        <a href="/about">
+            <button class="navbar-button">
+                About
+            </button>
+        </a>
+        <div class="submenu">
+            <a href="/about/contacts">
+                <button class="submenu-button">Club Contacts</button>
+            </a>
+            <a href="/about/ethos">
+                <button class="submenu-button">Club Ethos</button>
+            </a>
+            <a href="/about/news">
+                <button class="submenu-button">News</button><br>
+            </a>
+            <a href="/about/links">
+                <button class="submenu-button">Links</button>
+            </a>
+            <a href="/about/3g-astro">
+                <button class="submenu-button">3G Astro</button>
+            </a>
+            <a href="/about/directions">
+                <button class="submenu-button">Directions</button>
+            </a>
+            <a href="/about/calendar">
+                <button class="submenu-button">Club Calendar</button>
+            </a>
+            <a href="/about/joinus">
+                <button class="submenu-button">Join WJFC</button>
+            </a>
+        </div>
+    </div>
+    <a href="/">
+        <div class="submenu-div">
+            <button class="navbar-button">
+                Home
+            </button>
+        </div>
+    </a>
+
+</div>
+<div class="sociallinks">
+        <h1>Where to find us</h1>
+        <a href="https://www.facebook.com/WendoverJuniorFootball/">
+            <img src="{% static 'website/icons/facebook-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+        <a href="https://twitter.com/wendoverjuniors?lang=en">
+            <img src="{% static 'website/icons/twitter-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+        <a href="https://www.youtube.com/c/WendoverJuniorFootballClub/videos">
+            <img src="{% static 'website/icons/youtube-logo.png' %}"
+            height=32;
+            width=32;>
+            </img>
+        </a>
+    </div>
+<div class=edit_msg-form>
+<h1>Age Group Welcome Message</h1>
+<h2>{{ msg }}</h2>
+    {% if submitted %}
+        <h1 class="success">
+            Success!
+        </h1>
+    {% else %}
+        <form action="" method="post" novalidate>
+            <table>
+                {{form.as_table}}
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+            {% csrf_token %}
+        </form>
+    {% endif %}
+</div>
+<div class="bottom">
+    <img class="bottom-logo" src="{% static 'website/icons/logo.png' %}" 
+        height=200;
+        width=150;
+    >
+    <div class="important">
+        <h1>IMPORTANT</h1>
+        <a href="/about/welfare">
+            club welfare
+        </a>
+        <br>
+        <a href="/about/welfare">
+            documents & policies
+        </a>
+        <br>
+        <a href="/about/welfare">
+            privacy policy
+        </a>
+        <br>
+    </div>
+    <div class="about_bottom">
+        <h1>ABOUT</h1>
+        <p>
+            PLACEHOLDER
+        </p>
+    </div>
+    <div class="links_bottom">
+        <h1>WHERE TO FIND US</h1>
+        <a href="https://www.facebook.com/WendoverJuniorFootball/">FACEBOOK</a><br>
+        <a href="https://twitter.com/wendoverjuniors?lang=en">TWITTER</a><br>
+        <a href="https://www.youtube.com/c/WendoverJuniorFootballClub/videos">YOUTUBE</a><br>
+        <a href="/about/directions">DIRECTIONS</a>
+    </div>
+</div>
+</body>
+</html>
