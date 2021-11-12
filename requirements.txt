@@ -3,6 +3,8 @@ Pillow
 django-bootstrap4
 django-bootstrap-datepicker-plus
 django-imap-backend
-gunicorn==19.6.0
-Unipath==1.0
-python-decouple==3
+dj-database-url==0.3.0
+gunicorn==19.9.0
+whitenoise==3.2
+django-heroku
+psycopg2
